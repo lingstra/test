@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/hudie"
+    tools:context="com.example.administrator.fgfsgapplication.CityActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_text"
+            android:textStyle="italic"
+            android:hint="请输入您所要查询的地区名称"
+            android:textSize="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/go"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignRight="@+id/edit_text"
+            android:background="@drawable/sousuo"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/reflashlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_layout">
+    </ListView>
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="9"
+        android:columnCount="4"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true">
+    </GridLayout>
+
+
+</RelativeLayout>
